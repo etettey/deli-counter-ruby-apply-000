@@ -2,8 +2,8 @@
 
 def line(customer_line)
  i=1
-  while i < customer_line.length
-    print "The line is currently:  #{i}. #{customer_line[i]},"
+  customer_line.each do |m|
+    print " #{i}. #{m},"
     i+=1
 end
 if customer_line.empty?
