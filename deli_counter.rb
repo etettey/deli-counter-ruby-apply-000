@@ -4,7 +4,7 @@ def line(customer_line)
  i=1
  line_now = "The line is currently:"
   customer_line.each do |m|
-    line_now+= " #{i}. #{m},"
+    line_now+= " #{i}. #{m}"
     i+=1
   end
     if customer_line.empty?
