@@ -6,10 +6,11 @@ def line(customer_line)
   customer_line.each do |m|
     line_now+= " #{i}. #{m},"
     i+=1
-end
+  end
+    if customer_line.empty?
+      puts "The line is currently empty."
+else
 puts line_now
-if customer_line.empty?
-  puts "The line is currently empty."
 end
 end
 def take_a_number (customer_line,new_customer)
