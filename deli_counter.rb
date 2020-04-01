@@ -2,10 +2,12 @@
 
 def line(customer_line)
  i=1
+ line_now = "The line is currently:"
   customer_line.each do |m|
-    print " #{i}. #{m},"
+    line_now+= " #{i}. #{m},"
     i+=1
 end
+puts line_now
 if customer_line.empty?
   puts "The line is currently empty."
 end
